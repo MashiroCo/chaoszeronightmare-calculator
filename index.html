@@ -77,7 +77,8 @@
         <span class="muted" data-i18n="langLabel">言語</span>
         <div class="langbtn active" data-lang="ja">日本語</div>
         <div class="langbtn" data-lang="ko">한국어</div>
-        <div class="langbtn" data-lang="zh">中文</div>
+        <div class="langbtn" data-lang="zh-Hans">簡體中文</div>
+        <div class="langbtn" data-lang="zh-Hant">繁體中文</div>
         <div class="langbtn" data-lang="en">English</div>
       </div>
     </div>
@@ -113,11 +114,20 @@
       </details>
 
       <details>
-        <summary>中文简介 (Chinese)</summary>
+        <summary>簡體中文简介 (Chinese)</summary>
         <h2 lang="zh-Hans">卡奥零 计算器（CZN 计算器）</h2>
         <p lang="zh-Hans">
           Chaos Zero Nightmare 存档数据计算器。支持共用/怪物卡、灵感/神灵感、
           禁忌卡等项目的积分统计，并根据层级上限计算剩余积分。
+        </p>
+      </details>
+
+      <details>
+        <summary>繁體中文簡介 (Chinese)</summary>
+        <h2 lang="zh-Hans">卡厄斯夢境 計算機（CZN 計算機）</h2>
+        <p lang="zh-Hans">
+          Chaos Zero Nightmare 存檔點數計算機。
+          統計中立/怪物卡、靈光/神閃、禁忌卡的積分，並根據等級上限計算剩餘分數。
         </p>
       </details>
 
@@ -199,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
       addSpark0:'+ 번뜩임 0pt', addSpark10:'+ 번뜩임+10pt', addGod20:'+ 신 번뜩임+20pt',
       childSpark:'↳ 번뜩임', childGod:'↳ 신의 번뜩임'
     },
-    zh: {
+    'zh-Hans': {
       langLabel:'语言',
       titleJa:'卡奥零', titleSep:'｜', titleTool:'存档数据计算器',
       subtitle:'本页为 Chaos Zero Nightmare（卡奥零）的存档数据计算器。',
@@ -229,6 +239,37 @@ document.addEventListener('DOMContentLoaded', () => {
       addRemoveTag:'+ 【移除】效果(0pt)', addRemoveBonus:'+ 移除开始/固有卡+20',
       addSpark0:'+ 灵感+0', addSpark10:'+ 灵感+10', addGod20:'+ 神灵感+20',
       childSpark:'↳ 灵感', childGod:'↳ 神灵感'
+    },
+    'zh-Hant': {
+      langLabel: '語言',
+      titleJa: '卡厄斯夢境', titleSep: '｜', titleTool: '存檔分數計算機',
+      subtitle: '本頁為 Chaos Zero Nightmare（卡厄斯夢境）的存檔分數計算機。',
+      authorLabel: '作者X帳號',
+      tabA: '角色A', tabB: '角色B', tabC: '角色C',
+      tier: 'Tier', nightmare: '惡夢模式', nightmareNote: '（視作 +1 tier）',
+      tierOffset: '額外 tier 修正', codexHint: 'CODEX等',
+      cap: '上限', total: '總計', remain: '剩餘',
+      singleEvents: '一次性事件',
+      commonGet: '獲得中立卡', monGet: '獲得怪物卡',
+      convert: '卡牌轉換', taboo: '禁忌卡', unique: '獨特卡',
+      noteConvert: '靈光 +10pt、神閃 +20pt',
+      uniqueNote: '靈光 +0pt、神閃 +20pt',
+      stepEvents: '次數累積事件',
+      remove: '移除', next: '下次',
+      removeBonus: '移除起始/獨特卡 +20pt',
+      removeTag: '［移除］效果 +0pt',
+      removeProg: '0→10→30→50→70pt（之後皆為 70pt）/［移除］效果為 0pt & 不列入計算',
+      copy: '複製', spark: '靈光 +10pt', god: '神閃 +20pt',
+      copyProg: '0→10→30→50→70pt（之後皆為 +70pt）',
+      btnCommon: '記錄中立卡', btnMon: '記錄怪物卡',
+      btnConv: '記錄卡牌轉換', btnTaboo: '記錄禁忌卡',
+      btnUnique: '記錄獨特卡', btnRemove: '記錄移除', btnCopy: '記錄複製',
+      btnUndo: '上一步', btnClear: '清空', btnExport: '匯出記錄CSV',
+      logs: '記錄', noLogs: '尚無記錄。',
+      footerNote: '※ Tier 在各個角色標籤間共用，其他設定/記錄按角色標籤分開儲存於本地。',
+      addRemoveTag: '［移除］效果 +0pt', addRemoveBonus: '移除起始/獨特卡 +20pt',
+      addSpark0: '靈光 +0pt', addSpark10: '靈光 +10pt', addGod20: '神閃 +20pt',
+      childSpark: '↳ 靈光', childGod: '↳ 神閃'
     },
     en: {
       langLabel:'Language',
@@ -703,10 +744,11 @@ document.addEventListener('DOMContentLoaded', () => {
   "alternateName":[
     "카오제로 계산기","CZN 계산기",
     "卡奥零 计算器","CZN 计算器",
+    "卡厄斯夢境 計算機","CZN 計算機",
     "KaoZero calculator","CZN save data calculator"
   ],
   "url":"https://example.com/",
-  "inLanguage":["ja","ko","zh-Hans","en"],
+  "inLanguage":["ja","ko","zh-Hans","zh-Hant","en"],
   "applicationCategory":"GameApplication",
   "operatingSystem":"Any"
 }
